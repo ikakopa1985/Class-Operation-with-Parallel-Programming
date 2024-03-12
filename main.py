@@ -100,7 +100,7 @@ def default(arr):
 
 if __name__ == "__main__":
     trapezoid_dimensions = [[random.randint(1, 200), random.randint(
-        1, 200), random.randint(1, 200)] for _ in range(1000000)]
+        1, 200), random.randint(1, 200)] for _ in range(100000)]
     # 0.08 second(s)
     default(trapezoid_dimensions)
     # 0.13 second(s)
