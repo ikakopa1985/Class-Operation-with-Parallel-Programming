@@ -1,26 +1,10 @@
 import concurrent.futures
-# import requests
 import time
-import json
 import random
 
 start = time.perf_counter()
 
-base_url = 'https://dummyjson.com/products/'
-n = 100
-processNumber = 50
-thead = 2
-
-
-th = []
-threadPoolRunResults = []
 processPools = []
-processPoolsResults = []
-
-urls_list = [base_url + str(item) for item in range(1, n)]
-
-funcNumber = 0
-
 
 class Trapezoid:
     def __init__(self, trap):
@@ -116,7 +100,7 @@ def default(arr):
 
 if __name__ == "__main__":
     trapezoid_dimensions = [[random.randint(1, 200), random.randint(
-        1, 200), random.randint(1, 200)] for _ in range(100000)]
+        1, 200), random.randint(1, 200)] for _ in range(1000000)]
     # 0.08 second(s)
     default(trapezoid_dimensions)
     # 0.13 second(s)
